@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#151d26</color>
+    <color name="colorPrimaryDark">#11181F</color>
+    <color name="colorAccent">#5e9cd4</color>
+
+
+
+    <color name="white">#FFFFFF</color>
+    <color name="black">#000000</color>
+
+    <color name="colorBG">#F0151d26</color>
+    <color name="darkTransparentHintColor">#80FFFFFF</color>
+    <color name="colorEditTextNormal">#80FFFFFF</color>
+    <color name="colorEditTextSelected">#FFFFFF</color>
+    <color name="colorEditTextError">#99FF0000</color>
+
+</resources>

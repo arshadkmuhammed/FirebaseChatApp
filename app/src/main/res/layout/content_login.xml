@@ -1,0 +1,158 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorBG"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:context=".activity.LoginActivity"
+    tools:showIn="@layout/activity_login">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@+id/ll_bottom"
+        >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:paddingBottom="10dp"
+            android:layout_gravity="center">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:layout_marginRight="20dp"
+                android:layout_marginLeft="20dp">
+
+
+                <ImageView
+                    android:id="@+id/img_logo"
+                    android:layout_width="80dp"
+                    android:layout_height="80dp"
+                    android:focusedByDefault="true"
+                    android:focusableInTouchMode="true"
+                    android:focusable="true"
+                    android:src="@drawable/logo"
+                    android:layout_gravity="center"
+                    />
+
+                <android.support.design.widget.TextInputLayout
+                    android:id="@+id/til_username"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:theme="@style/EditTextHint"
+                    android:layout_marginTop="80dp"
+                    app:errorTextAppearance="@style/error_appearance"
+                    app:hintTextAppearance="@style/MyTextInputLayout">
+
+                    <android.support.design.widget.TextInputEditText
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:hint="@string/username"
+                        android:imeOptions="actionDone"
+                        android:singleLine="true"
+                        android:inputType="textEmailAddress"
+                        android:background="@drawable/edt_bg_selector"
+                        android:textColor="@color/white"
+                        android:textSize="16dp" />
+
+                </android.support.design.widget.TextInputLayout>
+
+                <android.support.design.widget.TextInputLayout
+                    android:id="@+id/til_password"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="20dp"
+                    android:theme="@style/EditTextHint"
+                    android:visibility="gone"
+                    app:errorTextAppearance="@style/error_appearance"
+                    app:hintTextAppearance="@style/MyTextInputLayout">
+
+                    <android.support.design.widget.TextInputEditText
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:hint="@string/password"
+                        android:imeOptions="actionDone"
+                        android:singleLine="true"
+                        android:background="@drawable/edt_bg_selector"
+                        android:textColor="@color/white"
+                        android:textSize="16dp" />
+
+                </android.support.design.widget.TextInputLayout>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/forgot_password"
+                    android:layout_marginTop="5dp"
+                    android:paddingLeft="5dp"
+                    android:paddingBottom="5dp"
+                    android:textColor="@color/white"
+                    android:alpha=".6"
+                    android:visibility="invisible"
+                    android:textSize="13dp"
+                    android:fontFamily="@font/raleway_regular"
+                    android:layout_gravity="right"/>
+
+                <TextView
+                    android:id="@+id/txt_login"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:text="@string/login"
+                    android:textSize="16dp"
+                    android:fontFamily="@font/raleway_medium"
+                    android:layout_marginTop="15dp"
+                    android:background="@drawable/white_border"
+                    android:paddingBottom="6dp"
+                    android:paddingTop="6dp"
+                    android:paddingLeft="45dp"
+                    android:paddingRight="45dp"
+                    android:textColor="@color/white"
+                    android:alpha=".8"/>
+
+            </LinearLayout>
+        </LinearLayout>
+    </ScrollView>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_centerHorizontal="true"
+        android:gravity="bottom"
+        android:layout_alignParentBottom="true"
+        android:padding="10dp"
+        android:layout_marginBottom="5dp"
+        android:id="@+id/ll_bottom"
+        >
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/no_account"
+            android:textColor="@color/white"
+            android:alpha=".7"
+            android:textSize="13dp"
+            android:fontFamily="@font/raleway_regular"
+            />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Sign up"
+            android:paddingLeft="5dp"
+            android:textColor="@color/white"
+            android:textSize="15dp"
+            android:alpha=".8"
+            android:fontFamily="@font/raleway_medium"
+            android:layout_gravity="right"/>
+
+    </LinearLayout>
+
+</RelativeLayout>

@@ -1,0 +1,35 @@
+<resources>
+
+    <!-- Base application theme. -->
+    <style name="AppTheme" parent="Theme.AppCompat.Light.DarkActionBar">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="colorAccent">@color/colorAccent</item>
+    </style>
+
+    <style name="EditTextHint" parent="Widget.Design.TextInputLayout">
+        <item name="android:textColorHint">@color/darkTransparentHintColor</item>
+        <item name="colorControlNormal">@color/darkTransparentHintColor</item>
+        <item name="colorControlActivated">@color/darkTransparentHintColor</item>
+        <item name="colorControlHighlight">@color/darkTransparentHintColor</item>
+        <item name="android:maxLines">3</item>
+        <item name="android:textColor">@color/darkTransparentHintColor</item>
+        <item name="android:textSize">11dp</item>
+        <item name="android:fontFamily">@font/raleway_regular</item>
+    </style>
+
+
+    <style name="error_appearance" parent="@android:style/TextAppearance">
+        <item name="android:textColor">@color/colorEditTextError</item>
+        <item name="android:textSize">11dp</item>
+        <item name="android:fontFamily">@font/raleway_regular</item>
+    </style>
+
+    <style name="MyTextInputLayout" parent="TextAppearance.AppCompat">
+        <item name="android:textColor">@color/darkTransparentHintColor</item>
+        <item name="android:textSize">11dp</item>
+        <item name="android:fontFamily">@font/raleway_regular</item>
+    </style>
+
+</resources>
